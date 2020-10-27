@@ -24,6 +24,8 @@ test("Renders the characters names", async () => {
   fireEvent.click(previousButton);
   fireEvent.click(nextButton);
 
+  await await (() => fireEvent.click(nextButton));
+
   //   expect(mockGetData).toHaveBeenCalledTimes(1);
   //   expect(mockGetData).toHaveBeenCalledWith();
 });
